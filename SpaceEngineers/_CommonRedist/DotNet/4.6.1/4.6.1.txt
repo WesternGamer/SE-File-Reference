@@ -1,0 +1,13 @@
+Where DotNet 4.6.1 installer is located.
+
+Files/Folders:
+
+installscript.vdf - This file tells steam to run Microsoft .NET Framework 4.6.1.cmd if there no windows registry key at 
+HKLM\Software\Wow6432Node\Valve\Steam\Apps\CommonRedist\.NET\4.6.1.
+
+Microsoft .NET Framework 4.6.1.cmd - Batch file that adds a windows registry key at HKLM\Software\Wow6432Node\Valve\Steam\Apps\CommonRedist\.NET\4.6.1. It then checks if the 
+windows registry key at HKLM\Software\Microsoft\NET Framework Setup\NDP\v4\Full exists. If it does not exist then it runs NDP461-KB3102436-x86-x64-AllOS-ENU.exe with /q /norestart 
+arguements. If it does exist then the batch file checks if the correct version of NET Framework is installed. If it is the incorrect version then 
+NDP461-KB3102436-x86-x64-AllOS-ENU.exe is ran with /q /norestart arguements. If it is the correct version then nothing happens and the batch file exits.
+
+NDP461-KB3102436-x86-x64-AllOS-ENU.exe - DotNet 4.6.1 installer.
