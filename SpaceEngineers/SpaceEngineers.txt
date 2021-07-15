@@ -1,0 +1,8 @@
+The Root folder of a Space Engineers Installation.
+
+_CommonRedist - The folder where redistributables are located.
+Bin64 - The folder where the biniares are located. This is where the exe file for Space Engineers is located.
+Content - Where most of the assets for Space Engineers are located.
+DeluxeDLC - Where the deluxe DLC files are located. Will not exist if you don't have the deluxe DLC installed.
+TempContent - Where temporary files are located. There is no use of this folder and Space Engineers does not use this folder for anything; safe to delete.
+Tools - Where some tools used to make Space Engineers are located.
